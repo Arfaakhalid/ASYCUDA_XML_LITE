@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "api/batch.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/batch.py"
+    }
+  ]
+}
